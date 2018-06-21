@@ -6,6 +6,9 @@
     <script type="text/javascript" src="js/functions.js"></script>
 </head>
 <body style="background:#ffe;">
+	<div id="loveHeart" style="width:300px;height: 300px">
+	<canvas id="garden" style="width: 100%;height: 100%;" />
+	</div>
 	<div style="margin:0 auto;width:650px;margin-top:20%;">
 		<div id="code" style="font-size:36px;float:left;color:#333;">
             <span class="comments">/**</span><br />
@@ -27,6 +30,9 @@
 		</div>
 	</div>
 <script type="text/javascript">
+	var offsetX = $("#loveHeart").width() / 2;
+   	var offsetY = $("#loveHeart").height() / 2 - 55;
+  	startHeartAnimation();
 	$("#code").typewriter();
 </script>
 </body>
